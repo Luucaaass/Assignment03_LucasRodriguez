@@ -1,0 +1,58 @@
+timestamp_utc: 2026-11-10T19:31:20.931629+00:00
+platform: Windows-11-10.0.26300-SP0
+python: 3.14.4
+numpy: 2.5.2, pandas: 3.0.6
+total_physical_ram_bytes: 68073553920 (63.40 GiB)
+gcc: gcc (GCC) 16.2.0
+openmp_macro: #define _OPENMP 202111
+cflags: -O3 -march=native -std=c11 -Wall -Wextra [-fopenmp]
+--- cpu_topology.exe ---
+CPU model: Intel(R) Core(TM) Ultra 9 285H
+Cache L1 Data    size=    48 KB line=64 B mask=0x1
+Cache L1 Instr   size=    64 KB line=64 B mask=0x1
+Cache L2 Unified size=  3072 KB line=64 B mask=0x1
+Cache L3 Unified size= 24576 KB line=64 B mask=0x3fff
+Cache L1 Data    size=    48 KB line=64 B mask=0x2
+Cache L1 Instr   size=    64 KB line=64 B mask=0x2
+Cache L2 Unified size=  3072 KB line=64 B mask=0x2
+Cache L1 Data    size=    32 KB line=64 B mask=0x4
+Cache L1 Instr   size=    64 KB line=64 B mask=0x4
+Cache L2 Unified size=  4096 KB line=64 B mask=0x3c
+Cache L1 Data    size=    32 KB line=64 B mask=0x8
+Cache L1 Instr   size=    64 KB line=64 B mask=0x8
+Cache L1 Data    size=    32 KB line=64 B mask=0x10
+Cache L1 Instr   size=    64 KB line=64 B mask=0x10
+Cache L1 Data    size=    32 KB line=64 B mask=0x20
+Cache L1 Instr   size=    64 KB line=64 B mask=0x20
+Cache L1 Data    size=    32 KB line=64 B mask=0x40
+Cache L1 Instr   size=    64 KB line=64 B mask=0x40
+Cache L2 Unified size=  4096 KB line=64 B mask=0x3c0
+Cache L1 Data    size=    32 KB line=64 B mask=0x80
+Cache L1 Instr   size=    64 KB line=64 B mask=0x80
+Cache L1 Data    size=    32 KB line=64 B mask=0x100
+Cache L1 Instr   size=    64 KB line=64 B mask=0x100
+Cache L1 Data    size=    32 KB line=64 B mask=0x200
+Cache L1 Instr   size=    64 KB line=64 B mask=0x200
+Cache L1 Data    size=    48 KB line=64 B mask=0x400
+Cache L1 Instr   size=    64 KB line=64 B mask=0x400
+Cache L2 Unified size=  3072 KB line=64 B mask=0x400
+Cache L1 Data    size=    48 KB line=64 B mask=0x800
+Cache L1 Instr   size=    64 KB line=64 B mask=0x800
+Cache L2 Unified size=  3072 KB line=64 B mask=0x800
+Cache L1 Data    size=    48 KB line=64 B mask=0x1000
+Cache L1 Instr   size=    64 KB line=64 B mask=0x1000
+Cache L2 Unified size=  3072 KB line=64 B mask=0x1000
+Cache L1 Data    size=    48 KB line=64 B mask=0x2000
+Cache L1 Instr   size=    64 KB line=64 B mask=0x2000
+Cache L2 Unified size=  3072 KB line=64 B mask=0x2000
+Cache L1 Data    size=    32 KB line=64 B mask=0x4000
+Cache L1 Instr   size=    64 KB line=64 B mask=0x4000
+Cache L2 Unified size=  2048 KB line=64 B mask=0xc000
+Cache L1 Data    size=    32 KB line=64 B mask=0x8000
+Cache L1 Instr   size=    64 KB line=64 B mask=0x8000
+Packages: 1
+Physical cores: 16
+Logical processors: 16
+Cores with SMT: 0
+EfficiencyClass 1: 6 cores, 6 logical processors
+EfficiencyClass 0: 10 cores, 10 logical processors
