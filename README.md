@@ -9,8 +9,6 @@
 
 **Author:** Lucas Rodríguez Hernández  
 **Course:** Big Data — Grado en Ciencia e Ingeniería de Datos (ULPGC), Academic Year 2026–2027  
-**Repository:** [https://github.com/Luucaaass/Assignment03_LucasRodriguez](https://github.com/Luucaaass/Assignment03_LucasRodriguez)  
-**Quick Links:** [PDF Report (`Assignment03_LucasRodriguez_Report.pdf`)](report/Assignment03_LucasRodriguez_Report.pdf) · [Markdown Report (`report/report.md`)](report/report.md) · [Main Summary CSV (`results/summary_metrics.csv`)](results/summary_metrics.csv) · [SIMD Summary CSV (`results/summary_vectorization.csv`)](results/summary_vectorization.csv)
 
 ---
 
