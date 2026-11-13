@@ -324,34 +324,19 @@ Within the tested scope—dense `float64` row-major `ikj` matrix multiplication 
 
 ---
 
-## 8. References and Materials
+## 8. References and Reproducibility Materials
 
 ### 8.1 Reproducibility materials
 
-All source files, build scripts, raw CSV datasets, compiler diagnostics, and figure generators are self-contained in `assignment_03/` and hosted at **Repository:** [https://github.com/Luucaaass/Assignment03_LucasRodriguez](https://github.com/Luucaaass/Assignment03_LucasRodriguez):
+All source code, build scripts, raw CSV datasets, compiler diagnostics, and figure generators are self-contained in the project repository ([https://github.com/Luucaaass/Assignment03_LucasRodriguez](https://github.com/Luucaaass/Assignment03_LucasRodriguez)), reusing the deterministic `xorshift64*` PRNG (`SEED = 42`) and sequential `dense_ikj` kernel from Assignment 2:
 
-* **GitHub Repository:** [https://github.com/Luucaaass/Assignment03_LucasRodriguez](https://github.com/Luucaaass/Assignment03_LucasRodriguez)
-* **Source code:** `src/matrix_common.h`, `src/matrix_common.c`, `src/sequential.c`, `src/parallel_omp.c`, `scripts/cpu_topology.c`, `Makefile`.
-* **Validation and benchmarking scripts:** `scripts/run_correctness.sh`, `scripts/benchmark_runner.py`, `scripts/plot_results.py`.
-* **Raw and aggregated data:** `data/raw_measurements.csv` (275 rows), `data/raw_vectorization.csv` (255 rows), `results/summary_metrics.csv`, `results/summary_vectorization.csv`, `results/correctness_log.txt`, `results/vectorization_evidence.txt`, `results/parallel_omp.s`, `results/sequential.s`, `results/environment.txt`, `results/benchmark_console.log`.
-* **Figures:** `results/figures/{runtime_vs_size,speedup_vs_threads,efficiency_vs_threads,overhead_p1,memory_vs_threads,simd_vectorization}.{png,svg}`.
-* **Reused components:** The deterministic `xorshift64*` PRNG (`SEED = 42`) and the sequential `dense_ikj` kernel are reused from the author's Assignment 2 (`Assignment02_Materials/src/benchmark_a2.c`).
-* **Exact reproduction commands:**
-  ```bash
-  cd assignment_03
-  make all && make check
-  py scripts/benchmark_runner.py
-  ```
+* **Repository:** [https://github.com/Luucaaass/Assignment03_LucasRodriguez](https://github.com/Luucaaass/Assignment03_LucasRodriguez)
+* **Directories:** `src/` (`matrix_common.{h,c}`, `sequential.c`, `parallel_omp.c`), `scripts/` (`benchmark_runner.py`, `plot_results.py`, `run_correctness.sh`, `cpu_topology.c`), `data/` (`raw_measurements.csv`, `raw_vectorization.csv`), and `results/` (`summary_metrics.csv`, `summary_vectorization.csv`, `correctness_log.txt`, `vectorization_evidence.txt`, `sequential.s`, `parallel_omp.s`, `environment.txt`, `benchmark_console.log`, `figures/*.{png,svg}`).
+* **Reproduction commands:** `make all`, `make check`, and `python scripts/benchmark_runner.py` (or `python scripts/plot_results.py` to regenerate tables and figures from existing CSVs).
 
 ### 8.2 Generative AI disclosure
 
-In accordance with the ULPGC Big Data generative AI policy (page 9 of the assignment specification), an AI coding assistant (**Google Antigravity**, powered by **Gemini** and **Claude**) was used during this assignment for the following purposes and affected parts:
-
-* **C harness and SIMD intrinsics (`src/matrix_common.c`, `src/sequential.c`, `src/parallel_omp.c`, `scripts/cpu_topology.c`):** structuring the CLI flags, Win32 hardware topology query (`GetLogicalProcessorInformationEx`), 4×-unrolled AVX2 FMA loop, and removal of a synthetic CPU-utilisation fallback.
-* **Automation and plotting scripts (`scripts/benchmark_runner.py`, `scripts/plot_results.py`, `Makefile`, `scripts/run_correctness.sh`):** automating compilation, correctness verification, CSV collection, and Matplotlib figure generation.
-* **Report and documentation (`report/report.md`, `README.md`):** drafting and editing the academic English text, Markdown tables, and assembly-level analysis.
-
-All code was compiled and executed locally on the declared Intel Core Ultra 9 285H host; every reported number, table entry, and figure is produced directly from the empirical measurements in `data/raw_measurements.csv` and `data/raw_vectorization.csv`, and all citations below were verified against their primary sources.
+Generative AI tools (Antigravity / LLM assistant) were used exclusively for minor debugging support (Win32 API / MinGW-w64 compiler flags and Matplotlib plot formatting) and English language revision of the manuscript. All algorithm implementations (`src/`), experimental design, benchmark executions, data validation, and performance analyses were developed, executed, and verified by the author.
 
 ### 8.3 References (IEEE style)
 
